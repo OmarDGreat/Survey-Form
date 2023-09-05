@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url("/Images/School-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 300px;
+    max-height: 500px;
+}
+
+div {
+    display: block;
+}
+
+h1, p {
+    text-align: center;
+    color: white;
+    font-weight: 100;
+}

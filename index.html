@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>survey-form.freecodecamp.rocks/</title>
+    <title>School Survey/</title>
     <link src="styles.css" href="./styles.css">
 </head>
 <body>
-    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <h1 id="title">School Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
 
     <form id="survey-form">
@@ -25,10 +25,19 @@
         </select>
     </label>
 
-    <label for="recommendation">Would you recommend freeCodeCamp to a friend?
+    <label for="recommendation">Are we a great school?
         Yes<input type="radio" name="recommend" id="recommendation">
         Maybe<input type="radio" name="recommend" id="recommendation">
         No<input type="radio" name="recommend" id="recommendation">
+    </label>
+
+    <label for="improvement">How can we do better? (check all that apply)
+        <input type="checkbox" name="improvement" id="improvement" value="1">Improve Classroom Technology
+        <input type="checkbox" name="improvement" id="improvement" value="2">Enhance Extracurricular Activities
+        <input type="checkbox" name="improvement" id="improvement" value="3">Provide More Study Resources
+        <input type="checkbox" name="improvement" id="improvement" value="4">Improve Cafeteria Food Options
+        <input type="checkbox" name="improvement" id="improvement" value="5">Enhance School Security Measures
+        <input type="checkbox" name="improvement" id="improvement" value="6">Offer Career Guidance and Counseling
     </label>
 
     </form>

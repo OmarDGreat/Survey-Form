@@ -11,9 +11,22 @@
     <p id="description">Thank you for taking the time to help us improve the platform</p>
 
     <form id="survey-form">
-    <label for="name">Name</label><input id="name" name="name" type="text" required>
-    <label for="email">Email</label><input id="email" name="email" type="email" required>
-    <label for="age">Age (optional)</label><input id="number" name="number" type="number" min="12" max="120" required>
+
+    <label for="name">Name</label><input id="name-label" name="name" type="text" placeholder="Enter your name">
+    <label for="email">Email</label><input id="email-label" name="email" type="email" placeholder="Enter your email">
+    <label for="age">Age (optional)</label><input id="number-label" name="number" type="number" min="12" max="120" placeholder="Enter your age">
+
+    <label for="role">Which option best describes your current role?
+        <select id="role" name="role">
+            <option value="">(select one)</option>
+            <option value="1">Stuent</option>
+            <option value="2">Teacher</option>
+            <option value="3">Other</option>
+        </select>
+    </label>
+
+    <label></label>
+
     </form>
 
 

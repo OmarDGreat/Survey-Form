@@ -1,27 +1,77 @@
-html, body {
-    height: 100%;
-}
 
 body {
     background-image: url("/Images/School-background.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
+    height: 100%;
+        
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 form {
     background-color: white;
     width: 80%;
     margin: 0 auto;
-    min-height: 300px;
-    max-height: 500px;
+    max-width: 700px;
+    padding: 20px;
+}
+
+label {
+    display: inline-block;
+    margin: 0.5rem 0;
+}
+
+input, textarea, select {
+  margin: 5px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+    background-color: lightgreen;
+    border: 1px solid lightgreen;
+    color: blue;
+}
+
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid grey;
+    
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
 }
 
 div {
     display: block;
 }
 
-h1, p {
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+
+title-menu h1, title-menu p {
     text-align: center;
     color: white;
     font-weight: 100;
+}
+
+input[type="submit"] {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
 }

@@ -7,56 +7,72 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1 id="title">School Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
-
-    <form id="survey-form">
     
-        <fieldset>
-            <label for="name">Name</label><input id="name-label" name="name" type="text" placeholder="Enter your name">
-            <label for="email">Email</label><input id="email-label" name="email" type="email" placeholder="Enter your email">
-            <label for="age">Age (optional)</label><input id="number-label" name="number" type="number" min="12" max="120" placeholder="Enter your age">
-        </fieldset>
-    
-
-        <fieldset>
-            <label for="role">Which option best describes your current role?
-                <select id="role" name="role">
-                    <option value="">(select one)</option>
-                    <option value="1">Stuent</option>
-                    <option value="2">Teacher</option>
-                    <option value="3">Other</option>
-                </select>
-            </label>
-        </fieldset>
-
-        <fieldset>
-            <label for="recommendation">Are we a great school?
-                Yes<input type="radio" name="recommend" id="recommendation">
-                Maybe<input type="radio" name="recommend" id="recommendation">
-                No<input type="radio" name="recommend" id="recommendation">
-            </label>
-        </fieldset>
-
-        <fieldset>
-            <label for="improvement">How can we do better? (check all that apply)
-                <input type="checkbox" name="improvement" id="improvement" value="1">Improve Classroom Technology
-                <input type="checkbox" name="improvement" id="improvement" value="2">Enhance Extracurricular Activities
-                <input type="checkbox" name="improvement" id="improvement" value="3">Provide More Study Resources
-                <input type="checkbox" name="improvement" id="improvement" value="4">Improve Cafeteria Food Options
-                <input type="checkbox" name="improvement" id="improvement" value="5">Enhance School Security Measures
-                <input type="checkbox" name="improvement" id="improvement" value="6">Offer Career Guidance and Counseling
-            </label>
-        </fieldset>
-
-        <fieldset>
-            <label for="comments">Please provide us any feedback we may have missed:
-                <textarea name="comments" id="comments" placeholder="I would like to see the school implement..."></textarea>
-            </label>
-        </fieldset>
-
-    <input type="submit" value="Submit">
-    </form>
+    <div class="content">
+        <title-menu>
+            <h1 id="title">School Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </title-menu>
+        <form id="survey-form">
+        
+            <fieldset>
+                <label for="name" id="name-label">Name</label><input id="name" name="name" type="text" placeholder="Enter your name" required>
+                <label for="email" id="email-label">Email</label><input id="email" name="email" type="email" placeholder="Enter your email" required>
+                <label for="age" id="number-label">Age (optional)</label><input id="number" name="number" type="number" min="12" max="120" placeholder="Enter your age" required>
+            </fieldset>
+        
+            <fieldset>
+                <label for="role">Which option best describes your current role?
+                    <select id="dropdown" name="role">
+                        <option value="">(select one)</option>
+                        <option value="1">Stuent</option>
+                        <option value="2">Teacher</option>
+                        <option value="3">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <p>Are we a great school?</p>
+                <label for="yes">
+                    <input type="radio" name="recommend" id="yes" class="inline">Yes
+                </label>
+                <br>
+                <label for="maybe">
+                    <input type="radio" name="recommend" id="maybe" class="inline">Maybe
+                </label>
+                <br>
+                <label for="no">
+                    <input type="radio" name="recommend" id="no" class="inline">No
+                </label>
+        
+            </fieldset>
+            <fieldset>
+                <p>How can we do better? (check all that apply)</p>
+                    <label for="improvement">
+                        <input type="checkbox" name="improvement" id="improvement" value="1">Improve Classroom Technology
+                    </label>
+                    <label for="improvement">
+                        <input type="checkbox" name="improvement" id="improvement" value="2">Enhance Extracurricular Activities
+                    </label>
+                    <label for="improvement">
+                        <input type="checkbox" name="improvement" id="improvement" value="3">Provide More Study Resources
+                    </label>
+                    <label for="improvement">
+                        <input type="checkbox" name="improvement" id="improvement" value="4">Improve Cafeteria Food Options
+                    </label>
+                    <label for="improvement">
+                        <input type="checkbox" name="improvement" id="improvement" value="5">Enhance School Security Measures
+                    </label>
+                    <input type="checkbox" name="improvement" id="improvement" value="6">Offer Career Guidance and Counseling
+            </fieldset>
+            <fieldset>
+                <label for="comments">Please provide us any feedback we may have missed:
+                    <textarea name="comments" id="comments" placeholder="I would like to see the school implement..."></textarea>
+                </label>
+            </fieldset>
+        <input type="submit" value="Submit">
+        </form>
+    </div>
 
 
     
